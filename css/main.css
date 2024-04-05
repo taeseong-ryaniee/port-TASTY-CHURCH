@@ -73,7 +73,6 @@
 .visual h2::after {
     position: absolute;
     bottom: -3rem;
-    ;
     left: calc(50% - 4rem);
     background-color: #3b3b3b;
     width: 8rem;
@@ -238,15 +237,18 @@
     content: '';
 }
 
-.service_info h2 {
-    font-size: 6rem;
+.service_info h2,
+.notice h2 {
+    font-size: 5rem;
+    font-weight: 700;
     margin-top: 13rem;
     margin-bottom: 13rem;
     text-align: center;
     position: relative;
 }
 
-.service_info h2::before {
+.service_info h2::before,
+.notice h2::before {
     position: absolute;
     bottom: -3rem;
     left: calc(50% - 4rem);
@@ -260,14 +262,91 @@
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 24rem;
+    position: relative;
 }
+.service_info{
+    position: relative;}
+.service_info::before{
+    position: absolute;
+    bottom: -26rem;
+    left: 50%;
+    width: 200%;
+    transform: translate(-50%, 0);
+    height: 25%;
+    background-image: url(../images/service_bg.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    content: '';}
+
 
 .service_info h3{
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 6rem;
+    font-weight: 700;
+
 }
+
+.service_info .time_info{
+    margin-top: 1rem;
+}
+.service_info .time_info .sunday_service{
+    margin-bottom: 16rem;
+    position: relative;
+}
+
+.service_info .time_info .sunday_service::before{
+    position: absolute;
+    bottom: -11rem;
+    left: 50%;
+    background-color: #3b3b3b;
+    width: 0.1rem;
+    height: 6rem;
+    content: '';
+}
+
+.service_info .sermon iframe{
+    border-radius: 2rem;}
 
 .service_info .time_info span{
     display: block;
+}
+
+.notice h2{
+    padding-top: 20rem;}
+
+.notice ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.8rem;
+    margin-bottom: 24rem;
+    text-align: center;
+
+    position: relative;
+}
+.notice ul li{
+    width: calc(33.3% - 10rem);
+    aspect-ratio: 1 / 1;}
+.notice ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 22rem;
+    color: #fbfbfb;
+    font-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5rem;}
+
+.notice ul .jubo{
+    background-image: url(../images/notice01.png);
+}
+.notice ul .essay{
+    background-image: url(../images/notice02.png);
+}
+.notice ul .meditation{
+    background-image: url(../images/notice03.png);
 }

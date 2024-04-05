@@ -10,6 +10,7 @@ html {
     color: #3b3b3b;
     background-color: #fbfbfb;
     word-break: break-all;
+overflow-x: hidden;
 }
 
 #wrap {
