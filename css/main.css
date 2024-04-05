@@ -1,0 +1,273 @@
+@import url(../css/reset.css);
+@import url(../css/default.css);
+
+.header {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    justify-items: center;
+}
+
+.header .logo {
+    width: 13.5rem;
+    height: 6.5rem;
+    position: relative;
+}
+
+.header .logo a {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 6.75rem);
+    font-size: 0;
+    line-height: 0;
+    width: 13.5rem;
+    height: 6.5rem;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10rem auto;
+}
+
+.header .btn-menu {
+    font-size: 0;
+    line-height: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74.98' height='47.38' viewBox='0 0 74.98 47.38'%3E%3Cg id='구성_요소_1_1' data-name='구성 요소 1 – 1' transform='translate(1 1)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M1658,64.059h72.98' transform='translate(-1658 -64.059)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M1658,64.059h42.747' transform='translate(-1628.768 -41.369)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M1658,64.059h72.98' transform='translate(-1658 -18.679)' fill='none' stroke='%233b3b3b' stroke-linecap='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 3.5rem auto;
+}
+
+.header .logo a {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    width: 13.5rem;
+    height: 6.5rem;
+
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10rem auto;
+}
+
+.visual {
+    text-align: center;
+    height: 82rem;
+    width: 82rem;
+    border-radius: 5rem;
+    background-image: url(../images/visual.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 9rem auto;
+}
+
+.visual h2 {
+    font-size: 4rem;
+    padding-top: 13rem;
+    line-height: 6rem;
+    position: relative;
+}
+
+.visual h2::after {
+    position: absolute;
+    bottom: -3rem;
+    ;
+    left: calc(50% - 4rem);
+    background-color: #3b3b3b;
+    width: 8rem;
+    height: 0.1rem;
+    content: '';
+}
+
+.visual p {
+    display: block;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+}
+
+.church_vision {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 14.5rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.church_vision::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 100%;
+    background-color: #f4f4f4;
+    transform: translate(-50%, 0);
+    content: '';
+}
+
+.church_vision h2 {
+    display: none;
+}
+
+.church_vision .vision_info {
+    display: block;
+    line-height: 6rem;
+    margin-bottom: 16rem;
+    position: relative;
+}
+
+.church_vision .vision_info::after {
+    position: absolute;
+    bottom: -8rem;
+    left: calc(50% - 4rem);
+    background-color: #3b3b3b;
+    width: 8rem;
+    height: 0.1rem;
+    content: '';
+}
+
+.church_vision .vision_info em {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.church_vision .vision_detail {
+    font-size: 2.5rem;
+    margin-top: 28rem;
+    text-align: center;
+}
+
+.church_vision .vision_detail ul {
+    display: block;
+    padding-bottom: 36rem;
+}
+
+.church_vision .vision_detail ul>li {
+    position: relative;
+}
+
+.church_vision .vision_detail .gospel {
+    margin-left: calc(50% - 30rem);
+    float: left;
+}
+
+.church_vision .vision_detail .gospel::before {
+    position: absolute;
+    top: -15rem;
+    left: 0;
+    width: 26rem;
+    height: 27rem;
+    background-image: url(../images/vision01.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .kingdom {
+    margin-left: 16rem;
+    float: left;
+}
+
+.church_vision .vision_detail .kingdom::before {
+    position: absolute;
+    top: -15rem;
+    left: -5rem;
+    width: 20rem;
+    height: 26rem;
+    background-image: url(../images/vision02.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .community {
+    margin-top: 25rem;
+    margin-left: calc(50% - 46rem);
+    clear: left;
+    float: left;
+}
+
+.church_vision .vision_detail .community::before {
+    position: absolute;
+    top: -18rem;
+    left: -12rem;
+    width: 30rem;
+    height: 26rem;
+    background-image: url(../images/vision03.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .faith,
+.church_vision .vision_detail .truth {
+    margin-left: 28rem;
+    float: left;
+    margin-top: 25rem;
+    z-index: 100;
+}
+
+.church_vision .vision_detail .faith::before {
+    position: absolute;
+    top: -18rem;
+    left: -12rem;
+    width: 39rem;
+    height: 30rem;
+    z-index: 1;
+    background-image: url(../images/vision04.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.church_vision .vision_detail .truth::before {
+    position: absolute;
+    top: -19rem;
+    left: -5rem;
+    width: 23rem;
+    height: 28rem;
+    background-image: url(../images/vision05.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+}
+
+.service_info h2 {
+    font-size: 6rem;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    text-align: center;
+    position: relative;
+}
+
+.service_info h2::before {
+    position: absolute;
+    bottom: -3rem;
+    left: calc(50% - 4rem);
+    background-color: #3b3b3b;
+    width: 8rem;
+    height: 0.1rem;
+    content: '';
+}
+
+.service_info .service_wrap{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.service_info h3{
+    font-size: 4.5rem;
+    margin-bottom: 6rem;
+}
+
+.service_info .time_info span{
+    display: block;
+}
