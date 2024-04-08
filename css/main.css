@@ -1,4 +1,4 @@
-@import url(../css/reset.css);
+f@import url(../css/reset.css);
 @import url(../css/default.css);
 
 .header .header_wrap {
@@ -639,7 +639,7 @@ background-position: center center;
     }
 
     .service_info {
-        margin: 10rem 5rem 0 5rem;
+        margin: 20rem 5rem 0 5rem;
     }
 
     .service_info .service_wrap {
