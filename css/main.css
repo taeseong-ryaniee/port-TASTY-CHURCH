@@ -485,7 +485,7 @@ background-position: center center;
     .visual {
         aspect-ratio: 1 / 1.5;
         background-size: cover;
-        margin: 30rem auto
+        margin: 20rem auto
     }
 
     .visual h2 {
