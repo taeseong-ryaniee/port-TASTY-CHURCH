@@ -6,26 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전주 맛있는교회 | Tasty Chruch, JEON-JU</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery-4.0.0-beta.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
     <div id="wrap">
         <header class="header">
-            <h1 class="logo"><a href="index.html">전주 맛있는교회</a></h1>
-            <button class="btn-menu">메뉴</button>
+            <div class="header_wrap">
+                <h1 class="logo"><a href="index.html">전주 맛있는교회</a></h1>
+                <button class="btn-menu">메뉴</button>
+                <button class="btn-close">메뉴</button>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">교회소개</a></li>
+                    <li><a href="#">교회소식</a></li>
+                    <li><a href="#">온라인주보</a></li>
+                    <li><a href="#">설교영상</a></li>
+                    <li><a href="#">용목사 이야기</a></li>
+                    <li><a href="#">아침묵상</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="container">
-            <section class="visual">
+            <section class="visual" data-aos="fade-in">
                 <h2>소금은 좋은 것이나 소금도<br>그 맛을 잃으면 무엇으로 짜게 하리요 </h2>
                 <p>누가복음 14:34</p>
             </section>
-            <section class="church_vision">
+            <section class="church_vision" >
                 <h2>교회비전</h2>
-                <span class="vision_info">맛있는 교회는 <em>맛 잃은 소금</em>처럼 의미를 잃어가는<br>
+                <span class="vision_info" data-aos="fade-in">맛있는 교회는 <em>맛 잃은 소금</em>처럼 의미를 잃어가는<br>
                     예수 그리스도의 <em>복음</em>의 진정한 맛을 회복하고,<br>
                     모두가 하나님 나라를 누릴 수 있는 <em>신앙 공동체</em> 형성을 지향합니다.</span>
-                <div class="vision_detail">
+                <div class="vision_detail" data-aos="fade-zoom-in" data-aos-duration=800" data-aos-offset="200">
                     <ul>
                         <li class="gospel">복음을 바르고 선명하게<br>전하는 교회</li>
                         <li class="kingdom">하나님 나라를<br>소망하는 교회</li>
@@ -35,37 +53,51 @@
                     </ul>
                 </div>
             </section>
-            <section class="service_info">
+
+            <section class="service_info" data-aos="fade-in" ">
                 <h2>예배안내</h2>
-                <div class="service_wrap">
+                <div class="service_wrap" data-aos="fade-zoom-in" data-aos-duration=800" data-aos-offset="200">
                     <div class="time_info">
                         <h3>주일 예배</h3>
                         <span class="sunday_service">매주 주일(일요일) 11시</span>
-                        <span>전북특별자지도<br>전주시 덕진구 천마산로 73<br>205호</span>
+                        <span class="worship_add">전북특별자지도<br>전주시 덕진구 천마산로 73<br>205호</span>
                     </div>
                     <div class="sermon">
                         <h3>설교영상</h3>
-                        <iframe id="ytplayer" type="text/html" width="674" height="379.125"
-                            src="https://www.youtube.com/embed/8UxN7D4v9D4" frameborder="0" allowfullscreen></iframe>
+                        <div class="youtube_wrap">
+                            <iframe id="ytplayer" type="text/html" width="674" height="379.125"
+                                src="https://www.youtube.com/embed/8UxN7D4v9D4" frameborder="0"
+                                allowfullscreen></iframe>
+                            <button class="btn-youtube"><a href="https://www.youtube.com/8UxN7D4v9D4" target="_blank"
+                                    rel="">설교영상<br>바로가기</a></button>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="notice">
+            <section class="notice" data-aos="fade-in">
                 <h2>교회소식</h2>
-                <ul>
+                <ul data-aos="fade-zoom-in" data-aos-duration=800" data-aos-offset="200">
                     <li><a href="#" class="jubo">온라인<br>주보</a></li>
                     <li><a href="#" class="essay">용목사<br>이야기</a></li>
                     <li><a href="#" class="meditation">아침<br>묵상</a></li>
                 </ul>
             </section>
         </div>
-        <footer class="footer">
-            <ul>
-                <li>한국기독교장로회 맛있는교회</li>
-                <li class="copyright">ⓒ 2024 Tasty Church, All rights reserved.</li>
-            </ul>
-        </footer>
     </div>
+    <footer class="footer">
+        <ul>
+            <li>한국기독교장로회 맛있는교회</li>
+            <li>E-mail. <a href="mailto:tastychurch@naver.com">tastychurch@naver.com</a></li>
+            <li class="copyright">ⓒ 2024 Tasty Church, All rights reserved.</li>
+        </ul>
+    </footer>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 600,
+            easing: 'ease-in-sine'
+        });
+    </script>
 </body>
 
 </html>
