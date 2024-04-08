@@ -639,12 +639,12 @@ background-position: center center;
     }
 
     .service_info {
-        margin: 25rem 0rem 5rem 0rem;
+        margin: 25rem 0rem 7rem 0rem;
     }
 
     .service_info .service_wrap {
-        justify-content: space-around;
-        margin-bottom: 0;
+        justify-content: space-between;
+        margin: 0 7rem;
     }
 
     .service_info h2 {
