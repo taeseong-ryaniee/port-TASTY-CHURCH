@@ -643,7 +643,7 @@ background-position: center center;
     }
 
     .service_info .service_wrap {
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 0;
     }
 
@@ -651,6 +651,7 @@ background-position: center center;
         font-size: 5rem;
         font-weight: 700;
         margin: 5rem 7rem 5rem 7rem;
+        text-align: left;
         position: relative;
     }
 
@@ -670,7 +671,7 @@ background-position: center center;
         margin-top: 1rem;
         text-align: left;
         font-size: 4rem;
-        width: calc(100% - 30rem);
+        width: calc(100% - 40rem);
     }
 
     .service_info .time_info .sunday_service {
@@ -692,7 +693,7 @@ background-position: center center;
 
     .service_info .sermon .youtube_wrap {
         display: block;
-        width: 30rem;
+        width: 40rem;
         aspect-ratio: 2 / 1;
     }
 
