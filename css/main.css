@@ -43,10 +43,6 @@
     background-size: 3.5rem auto;
 }
 
-.header .btn-menu:hover{
-    background-image: #f4f4f4;
-    border-radius: 50%;
-}
 .header.open .btn-menu {
     display: none;
 }
@@ -587,7 +583,6 @@ background-position: center center;
     .church_vision .vision_detail .community {
         margin-top: 38rem;
         margin-left: calc(50% - 28rem);
-        clear: auto;
         float: left;
     }
 
